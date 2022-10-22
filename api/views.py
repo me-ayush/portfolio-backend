@@ -6,7 +6,8 @@ from .models import *
 
 # Create your views here.
 def index(request):
-    return redirect("https://ayush-kushwaha.netlify.app/")
+    return redirect("127.0.0.1:8000/api/certificates")
+    # return redirect("https://ayush-kushwaha.netlify.app/")
 
 def certificates(request):
     resp1 = Certificates.objects.all()
