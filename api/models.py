@@ -4,8 +4,8 @@ from django.db import models
 # Create your models here.
 class Certificates(models.Model):
     certificate_name = models.CharField(max_length=100)
-    certificate_link = models.CharField(max_length=50)
-    certificate_issuer = models.CharField(max_length=50)
+    certificate_link = models.CharField(max_length=200)
+    certificate_issuer = models.CharField(max_length=100)
     certificate_issue_year = models.IntegerField()
     certificate_issue_month = models.IntegerField()
     certificate_issue_date = models.IntegerField()
